@@ -1,8 +1,16 @@
+import TextBox from "./components/inputs/textbox";
+import GlobalStyles from "./globalStyles";
+import { Container } from './components/layout/container';
+
 const App = () => {
   return (
-    <div>
-      Hello World!
-    </div>
+    <Container>
+      <GlobalStyles />
+      <TextBox
+        name="name"
+        label="Name"
+      />
+    </Container>
   );
 }
 
